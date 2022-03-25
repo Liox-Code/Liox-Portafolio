@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { createPortal } from 'react-dom'
 
-//Styles
-import * as S from './styles'
+// Styles
+import Container from './styles'
 
 type TPortalProps = {
   children?: React.ReactNode
@@ -19,12 +19,13 @@ const Portal = React.forwardRef<HTMLDivElement | null, TPortalProps>(
 
     return portalRoot && show
       ? createPortal(
-          <S.Container>
+          <Container>
             <div ref={ref}>{children}</div>
-          </S.Container>,
+          </Container>,
           portalRoot
         )
       : null
   }
 )
+Portal.displayName = 'Portal'
 export default Portal

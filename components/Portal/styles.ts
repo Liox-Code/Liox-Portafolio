@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Container = styled.div`
+export default styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -12,5 +12,3 @@ const Container = styled.div`
   background: var(--primary-opacity);
   z-index: 100;
 `
-
-export { Container }
