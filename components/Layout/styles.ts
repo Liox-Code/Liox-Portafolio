@@ -4,15 +4,18 @@ export const Body = styled.div`
   display: grid;
   min-height: 100vh;
   grid-template-rows: max-content auto max-content;
-  background-color: var(--primary-color);
 `
 
 export const HeaderContainer = styled.div`
-  display: grid;
+  padding: 0 3rem;
+  background-color: var(--black);
 `
 
 export const Container = styled.div`
-  padding: 0 30px;
+  background-color: var(--black-light);
 `
 
-export const FooterContainer = styled.div``
+export const FooterContainer = styled.div`
+  padding: 0 3rem;
+  background-color: var(--primary-color-light);
+`

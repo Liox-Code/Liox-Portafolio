@@ -3,6 +3,9 @@
 /.pnp
 .pnp.js
 
+# images
+/public
+
 # testing
 /coverage
 tsconfig.tsbuildinfo
