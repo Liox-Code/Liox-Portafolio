@@ -1,6 +1,6 @@
 import React from 'react'
 
-//Styles
+// Styles
 import * as S from './styles'
 
 type TChildrenProps = {
@@ -10,9 +10,9 @@ type TChildrenProps = {
 const Layout: React.FC<TChildrenProps> = ({ children }: TChildrenProps) => {
   return (
     <S.Body>
-      <S.HeaderContainer></S.HeaderContainer>
+      <S.HeaderContainer>Header</S.HeaderContainer>
       <S.Container>{children}</S.Container>
-      <S.FooterContainer></S.FooterContainer>
+      <S.FooterContainer>Footer</S.FooterContainer>
     </S.Body>
   )
 }
