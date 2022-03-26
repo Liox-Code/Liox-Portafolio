@@ -53,14 +53,21 @@ export const SocialMediaIcon = styled.div`
   height: 40px;
   background-color: var(--white);
   border-radius: 100%;
+  cursor: pointer;
+
+  &:hover {
+    width: 50px;
+    height: 50px;
+    outline: 3px solid var(--primary-color);
+  }
 `
 
 interface IIcon {
-  IconColor: string
+  iconcolor: string
 }
 
 export const Icon = styled(FontAwesomeIcon)<IIcon>`
   width: 80%;
   height: 80%;
-  color: ${props => props.IconColor};
+  color: ${props => props.iconcolor};
 `

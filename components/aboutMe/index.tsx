@@ -27,16 +27,16 @@ const AboutMe = () => {
         <S.SocialMediaIcon>
           <S.Icon
             icon={['fab', 'linkedin']}
-            IconColor="var(--linkedin-color)"
+            iconcolor="var(--linkedin-color)"
           />
         </S.SocialMediaIcon>
         <S.SocialMediaIcon>
-          <S.Icon icon={['fab', 'github']} IconColor="var(--github-color)" />
+          <S.Icon icon={['fab', 'github']} iconcolor="var(--github-color)" />
         </S.SocialMediaIcon>
         <S.SocialMediaIcon>
           <S.Icon
             icon={['fab', 'whatsapp']}
-            IconColor="var(--whatsapp-color)"
+            iconcolor="var(--whatsapp-color)"
           />
         </S.SocialMediaIcon>
       </S.SocialMediaContainer>
