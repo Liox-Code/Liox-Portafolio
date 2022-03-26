@@ -7,8 +7,8 @@ import * as S from './styles'
 
 const Navbar = () => {
   const Links = [
-    { id: 'lk-1', text: 'INICIO', path: './' },
-    { id: 'lk-2', text: 'PROYECTOS', path: './projects' }
+    { id: 'lk-1', text: 'INICIO', path: '/' },
+    { id: 'lk-2', text: 'PROYECTOS', path: '/projects' }
   ]
   return (
     <S.Container>

@@ -24,10 +24,21 @@ const AboutMe = () => {
         voluptas praesentium in at voluptate.
       </S.Description>
       <S.SocialMediaContainer>
-        <S.SocialMediaIcon />
-        <S.SocialMediaIcon />
-        <S.SocialMediaIcon />
-        <S.SocialMediaIcon />
+        <S.SocialMediaIcon>
+          <S.Icon
+            icon={['fab', 'linkedin']}
+            IconColor="var(--linkedin-color)"
+          />
+        </S.SocialMediaIcon>
+        <S.SocialMediaIcon>
+          <S.Icon icon={['fab', 'github']} IconColor="var(--github-color)" />
+        </S.SocialMediaIcon>
+        <S.SocialMediaIcon>
+          <S.Icon
+            icon={['fab', 'whatsapp']}
+            IconColor="var(--whatsapp-color)"
+          />
+        </S.SocialMediaIcon>
       </S.SocialMediaContainer>
     </S.Container>
   )

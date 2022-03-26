@@ -2,8 +2,20 @@ import React from 'react'
 import { AppProps } from 'next/app'
 import { createGlobalStyle } from 'styled-components'
 
+// Icons
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import { config, library } from '@fortawesome/fontawesome-svg-core'
+import {
+  faLinkedin,
+  faGithub,
+  faWhatsapp
+} from '@fortawesome/free-brands-svg-icons'
+
 // Components
 import Layout from '../components/Layout'
+
+config.autoAddCss = false
+library.add(faLinkedin, faGithub, faWhatsapp)
 
 const GlobalStyle = createGlobalStyle`
     *{
@@ -19,8 +31,9 @@ const GlobalStyle = createGlobalStyle`
 
     :root{
       --primary-color: #d83f87;
+      --primary-color-light: #F3C5DB;
       --secondary-color: #07f49e;
-      --secondary-color-light: #CDFCEB;
+      --secondary-color-light: #E1FDF3;
       --purple: #19162c;
       --purple-dark: #121026;
       --purple-light: #262142;
@@ -28,6 +41,10 @@ const GlobalStyle = createGlobalStyle`
       --black: #1b1b1b;
       --black-light: #2F2F2F;
       --white: #ffffff;
+      
+      --linkedin-color: #0077b5;
+      --github-color: #333;
+      --whatsapp-color: #25d366;
 
 
       /* --magenta: #d83f87;

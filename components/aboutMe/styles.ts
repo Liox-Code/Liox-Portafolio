@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 
+// Icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 export const Container = styled.div`
   display: grid;
   justify-content: center;
@@ -43,8 +46,21 @@ export const SocialMediaContainer = styled.div`
 `
 
 export const SocialMediaIcon = styled.div`
-  height: 40px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
   width: 40px;
-  background-color: var(--purple-light);
+  height: 40px;
+  background-color: var(--white);
   border-radius: 100%;
+`
+
+interface IIcon {
+  IconColor: string
+}
+
+export const Icon = styled(FontAwesomeIcon)<IIcon>`
+  width: 80%;
+  height: 80%;
+  color: ${props => props.IconColor};
 `
