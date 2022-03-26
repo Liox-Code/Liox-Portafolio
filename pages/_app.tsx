@@ -20,9 +20,10 @@ const GlobalStyle = createGlobalStyle`
     :root{
       --primary-color: #d83f87;
       --secondary-color: #07f49e;
+      --secondary-color-light: #9BFAD8;
       --purple: #19162c;
-      --purple-dark: #131128;
-      --purple-light: #524e80;
+      --purple-dark: #121026;
+      --purple-light: #262142;
       --blue: #3a437e;
       --black: #1b1b1b;
       --black-light: #2F2F2F;

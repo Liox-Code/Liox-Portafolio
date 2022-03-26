@@ -1,5 +1,8 @@
 import React from 'react'
 
+// Components
+import ProjectItem from '../ProjectItem'
+
 // Styles
 import * as S from './styles'
 
@@ -8,7 +11,15 @@ const Projects = () => {
     <S.Container>
       <S.Title>Proyectos</S.Title>
       <S.ProjectsContainer>
-        <S.Item />
+        <ProjectItem />
+        <ProjectItem />
+        <ProjectItem />
+        <ProjectItem />
+        <ProjectItem />
+        <ProjectItem />
+        <ProjectItem />
+        <ProjectItem />
+        <ProjectItem />
       </S.ProjectsContainer>
     </S.Container>
   )
