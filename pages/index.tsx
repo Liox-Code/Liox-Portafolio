@@ -1,16 +1,22 @@
 import React from 'react'
 
 // Components
+import AboutMe from '../components/aboutMe'
 import Projects from '../components/Projects'
 
 // Styles
-import Container from '../styles/index'
+import * as S from '../styles/index'
 
 const index = () => {
   return (
-    <Container>
-      <Projects />
-    </Container>
+    <S.Container>
+      <S.ProjectContainer>
+        <Projects />
+      </S.ProjectContainer>
+      <S.AboutMeContainer>
+        <AboutMe />
+      </S.AboutMeContainer>
+    </S.Container>
   )
 }
 
