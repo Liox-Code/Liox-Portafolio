@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Components
-import AboutMe from '../components/aboutMe'
+import AboutMe from '../components/AboutMe'
 import Projects from '../components/Projects'
 
 // Styles
