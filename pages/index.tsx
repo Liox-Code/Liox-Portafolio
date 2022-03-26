@@ -4,13 +4,13 @@ import React from 'react'
 import Projects from '../components/Projects'
 
 // Styles
-import * as S from '../styles/index'
+import Container from '../styles/index'
 
 const index = () => {
   return (
-    <S.Container>
+    <Container>
       <Projects />
-    </S.Container>
+    </Container>
   )
 }
 
