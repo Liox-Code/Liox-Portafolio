@@ -8,14 +8,14 @@ export const Body = styled.div`
 
 export const HeaderContainer = styled.div`
   padding: 0 3rem;
-  background-color: var(--black);
+  background-color: var(--purple);
 `
 
 export const Container = styled.div`
-  background-color: var(--black-light);
+  background-color: var(--purple-dark);
 `
 
 export const FooterContainer = styled.div`
   padding: 0 3rem;
-  background-color: var(--primary-color-light);
+  background-color: var(--purple);
 `

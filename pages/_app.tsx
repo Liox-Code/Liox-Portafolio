@@ -18,19 +18,27 @@ const GlobalStyle = createGlobalStyle`
     }
 
     :root{
-      --primary-color-dark: #9c2783;
-      --primary-color: #ba3385;
-      --primary-color-light: #d83f87;
-      --secondary-color-dark: #257c8e;
-      --secondary-color: #16b896;
-      --secondary-color-light: #07f49e;
-      --purple-dark: #42047e;
-      --purple: #601080;
-      --purple-light: #7e1c82;
-      --blue: #334086;
-      --black: #1B1B1B;
+      --primary-color: #d83f87;
+      --secondary-color: #07f49e;
+      --purple: #19162c;
+      --purple-dark: #131128;
+      --purple-light: #524e80;
+      --blue: #3a437e;
+      --black: #1b1b1b;
       --black-light: #2F2F2F;
       --white: #ffffff;
+
+
+      /* --magenta: #d83f87;
+      --magenta-dark: #9c2783;
+      --magenta-light: #ba3385;
+      --green: #16b896;
+      --green-dark: #257c8e;
+      --green-light: #07f49e;
+      --purple: #601080;
+      --purple-dark: #42047e;
+      --purple-light: #7e1c82;
+      --blue: #334086; */
 
       --primary-opacity: rgb(15,15,15,0.6);
 

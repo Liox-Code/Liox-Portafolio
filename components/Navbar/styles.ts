@@ -28,13 +28,13 @@ export const Link = styled.a`
   justify-items: center;
   height: 100%;
   padding: 0 2rem;
-  color: var(--primary-color-light);
+  color: var(--primary-color);
   cursor: pointer;
   font-size: var(--x4);
   font-weight: bold;
   text-decoration: none;
 
   &:hover {
-    color: var(--secondary-color-light);
+    color: var(--secondary-color);
   }
 `
