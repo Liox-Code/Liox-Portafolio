@@ -4,23 +4,30 @@ import Image from 'next/image'
 // Styles
 import * as S from './styles'
 
-const ProjectItem = () => {
+interface IProjectData {
+  id: string
+  imageLink: string
+  title: string
+  description: string
+}
+
+type TProjectItemProps = {
+  ProjectData: IProjectData
+}
+
+const ProjectItem: React.FC<TProjectItemProps> = (props: TProjectItemProps) => {
+  const { ProjectData } = props
+
+  const { imageLink = '#', title = '#', description = '#' } = ProjectData
+
   return (
     <S.Container>
       <S.ImageContainer>
-        <Image
-          src="/images/wpMagenta.jpg"
-          layout="fill"
-          alt="Logo"
-          objectFit="cover"
-        />
+        <Image src={imageLink} layout="fill" alt="Logo" objectFit="cover" />
       </S.ImageContainer>
       <S.ContentContainer>
-        <S.Title>Proyecto</S.Title>
-        <S.Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta optio
-          amet sint enim quibusdam maiores fuga illo quam aspernatur, qui
-        </S.Description>
+        <S.Title>{title}</S.Title>
+        <S.Description>{description}</S.Description>
       </S.ContentContainer>
     </S.Container>
   )

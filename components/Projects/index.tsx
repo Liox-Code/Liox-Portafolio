@@ -7,19 +7,37 @@ import ProjectItem from '../ProjectItem'
 import * as S from './styles'
 
 const Projects = () => {
+  const ProjectsData = [
+    {
+      id: 'pd-1',
+      imageLink: '/images/wpMagenta.jpg',
+      title: 'Proyecto 1',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta optio amet sint enim quibusdam maiores fuga illo quam aspernatur, qui'
+    },
+    {
+      id: 'pd-2',
+      imageLink: '/images/wpBlue.jpg',
+      title: 'Proyecto 2',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta optio amet sint enim quibusdam maiores fuga illo quam aspernatur, qui'
+    },
+    {
+      id: 'pd-3',
+      imageLink: '/images/wpLightBlue.jpg',
+      title: 'Proyecto 3',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta optio amet sint enim quibusdam maiores fuga illo quam aspernatur, qui'
+    }
+  ]
   return (
     <S.Container>
       <S.Title>Proyectos</S.Title>
       <S.ProjectsContainer>
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
+        {ProjectsData.map(ProjectData => {
+          const { id } = ProjectData
+          return <ProjectItem key={id} ProjectData={ProjectData} />
+        })}
       </S.ProjectsContainer>
     </S.Container>
   )
