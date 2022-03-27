@@ -46,6 +46,15 @@ const GlobalStyle = createGlobalStyle`
       --github-color: #333;
       --whatsapp-color: #25d366;
 
+      --primary-op8: rgba(216, 65, 135, 0.8);
+      --primary-op6: rgba(216, 65, 135, 0.6);
+      --primary-op1: rgba(216, 65, 135, 0.1);
+      --secondary-op8: rgba(7, 244, 158, 0.8);
+      --secondary-op6: rgba(7, 244, 158, 0.6);
+      --purple-op6: rgba(25, 22, 44, 0.65);
+      --black-op6: rgba(47, 47, 47, 0.6);
+      --white-op6: rgba(255, 255, 255, 0.6);
+
 
       /* --magenta: #d83f87;
       --magenta-dark: #9c2783;
@@ -57,8 +66,6 @@ const GlobalStyle = createGlobalStyle`
       --purple-dark: #42047e;
       --purple-light: #7e1c82;
       --blue: #334086; */
-
-      --primary-opacity: rgb(15,15,15,0.6);
 
       --x1: 0.4rem;
       --x2: 0.8rem;

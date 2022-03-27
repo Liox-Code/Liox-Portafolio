@@ -2,6 +2,7 @@ import React from 'react'
 
 // Components
 import AboutMe from '../components/AboutMe'
+import Portrait from '../components/Portrait'
 import Projects from '../components/Projects'
 
 // Styles
@@ -16,6 +17,7 @@ const index = () => {
       <S.AboutMeContainer>
         <AboutMe />
       </S.AboutMeContainer>
+      <Portrait />
     </S.Container>
   )
 }
