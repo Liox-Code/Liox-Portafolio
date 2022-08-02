@@ -19,8 +19,18 @@ export const ContentContainer = styled.div`
 `
 
 export const Title = styled.h2`
-  color: var(--primary-color);
   font-size: var(--x5);
+
+  & a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  & a:active,
+  & a:hover,
+  & a.visited {
+    color: var(--secondary-color);
+  }
 `
 
 export const Description = styled.div`

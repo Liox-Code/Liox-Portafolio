@@ -8,11 +8,12 @@ export const Container = styled.div`
 `
 
 export const LogoContainer = styled.div`
+  position: relative;
   display: grid;
   align-items: center;
   justify-items: center;
   height: 100%;
-  width: 60px;
+  width: 80px;
   cursor: pointer;
 `
 
