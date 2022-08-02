@@ -29,14 +29,18 @@ const ProjectItem: React.FC<TProjectItemProps> = (props: TProjectItemProps) => {
 
   return (
     <S.Container>
-      <S.ImageContainer>
-        <Image
-          src={imagePath}
-          layout="fill"
-          alt="Project Image"
-          objectFit="cover"
-        />
-      </S.ImageContainer>
+      <Link href={imageLink}>
+        <a>
+          <S.ImageContainer>
+            <Image
+              src={imagePath}
+              layout="fill"
+              alt="Project Image"
+              objectFit="cover"
+            />
+          </S.ImageContainer>
+        </a>
+      </Link>
       <S.ContentContainer>
         <S.Title>
           <Link href={imageLink}>
