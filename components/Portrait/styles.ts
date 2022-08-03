@@ -4,7 +4,7 @@ export const Container = styled.div`
   height: 100vh;
   width: 100vw;
   background-color: var(--primary-color);
-  background-image: url('/images/wpMountain.jpg');
+  background-image: url('/images/PortraitImage.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
