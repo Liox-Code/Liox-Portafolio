@@ -16,7 +16,9 @@ const Layout: React.FC<TChildrenProps> = ({ children }: TChildrenProps) => {
       <S.HeaderContainer>
         <Navbar />
       </S.HeaderContainer>
-      <S.Container>{children}</S.Container>
+      <S.Container>
+        <S.PaddingContainer>{children}</S.PaddingContainer>
+      </S.Container>
       <S.FooterContainer>Footer</S.FooterContainer>
     </S.Body>
   )

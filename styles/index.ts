@@ -8,11 +8,6 @@ export const Container = styled.div`
     'projects';
   grid-gap: 2rem;
   padding: 2rem;
-
-  @media (min-width: 820px) {
-    grid-template-columns: 4fr 1fr;
-    grid-template-areas: 'projects aboutMe';
-  }
 `
 export const ProjectContainer = styled.div`
   grid-area: projects;
