@@ -10,12 +10,12 @@ import {
   faGithub,
   faWhatsapp
 } from '@fortawesome/free-brands-svg-icons'
-
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 // Components
 import Layout from '../components/Layout'
 
 config.autoAddCss = false
-library.add(faLinkedin, faGithub, faWhatsapp)
+library.add(faLinkedin, faGithub, faWhatsapp, faBars)
 
 const GlobalStyle = createGlobalStyle`
     *{

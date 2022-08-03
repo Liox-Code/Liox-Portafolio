@@ -45,7 +45,7 @@ export const SocialMediaContainer = styled.div`
   width: 100%;
 `
 
-export const SocialMediaIcon = styled.div`
+export const SocialMediaIcon = styled.a`
   display: grid;
   justify-items: center;
   align-items: center;
