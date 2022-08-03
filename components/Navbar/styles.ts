@@ -37,9 +37,20 @@ export const MenuIcon = styled(FontAwesomeIcon)`
 `
 
 export const Nav = styled.nav`
+  position: absolute;
+  right: 0;
+  top: 60px;
   display: grid;
-  grid-auto-flow: column;
-  height: 100%;
+  grid-auto-flow: row;
+  width: 100%;
+  min-width: 320px;
+  background-color: var(--purple);
+
+  @media (min-width: 800px) {
+    position: static;
+    grid-auto-flow: column;
+    height: 100%;
+  }
 `
 
 export const Link = styled.a`
@@ -47,7 +58,7 @@ export const Link = styled.a`
   align-items: center;
   justify-items: center;
   height: 100%;
-  padding: 0 2rem;
+  padding: 1.2rem 2rem;
   color: var(--primary-color);
   cursor: pointer;
   font-size: var(--x4);

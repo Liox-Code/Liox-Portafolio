@@ -9,6 +9,7 @@ export const Body = styled.div`
 export const HeaderContainer = styled.div`
   padding: 0 3rem;
   background-color: var(--purple);
+  z-index: 100;
 `
 
 export const Container = styled.div`
