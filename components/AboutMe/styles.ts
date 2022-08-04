@@ -5,31 +5,48 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const Container = styled.div`
   display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 'max-content' 'max-content';
   justify-content: center;
   grid-gap: 1.2rem;
   width: 100%;
-  padding: 2rem;
   background-color: var(--purple);
   border-radius: 2rem;
 `
 export const ImageContainer = styled.div`
   position: relative;
+  width: 320px;
+  height: 100%;
+`
+
+export const InfoContainer = styled.div`
+  display: grid;
+  grid-template-areas:
+    'Title'
+    'Subtitle'
+    'Description'
+    'Links';
+  grid-template-rows: repeat(4, max-content);
+  grid-gap: 1.2rem;
   width: 100%;
-  height: 200px;
+  padding: 20px 40px;
 `
 
 export const Title = styled.h2`
+  grid-area: Title;
   color: var(--primary-color);
-  font-size: var(--x5);
+  font-size: var(--x6);
   text-align: center;
 `
 export const SubTitle = styled.h3`
-  color: var(--primary-color);
-  font-size: var(--x4);
+  grid-area: Subtitle;
+  color: var(--secondary-color);
+  font-size: var(--x5);
   text-align: center;
 `
 
 export const Description = styled.div`
+  grid-area: Description;
   width: 100%;
   color: var(--secondary-color-light);
   font-size: var(--x4);
@@ -37,6 +54,7 @@ export const Description = styled.div`
 `
 
 export const SocialMediaContainer = styled.div`
+  grid-area: Links;
   display: grid;
   grid-auto-flow: column;
   justify-content: center;

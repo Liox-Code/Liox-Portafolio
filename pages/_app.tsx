@@ -55,6 +55,8 @@ const GlobalStyle = createGlobalStyle`
       --black-op6: rgba(47, 47, 47, 0.6);
       --white-op6: rgba(255, 255, 255, 0.6);
 
+      --pri-sec-diag-right-gradient: linear-gradient(170deg, var(--primary-color) 30%, var(--secondary-color) 70%);
+
 
       /* --magenta: #d83f87;
       --magenta-dark: #9c2783;
