@@ -50,6 +50,7 @@ export const Description = styled.div`
   width: 100%;
   color: var(--secondary-color-light);
   font-size: var(--x4);
+  line-height: var(--x6);
   text-align: justify;
 `
 
