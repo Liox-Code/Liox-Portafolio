@@ -7,17 +7,22 @@ import * as S from './styles'
 const AboutMe = () => {
   return (
     <S.Container>
+      <S.SectionTitle>
+        <S.TitleNumber>01.</S.TitleNumber>
+        <S.TitleText>About Me</S.TitleText>
+        <S.TitleLine />
+      </S.SectionTitle>
       <S.ImageContainer>
         <Image
-          src="/images/selfPicture.jpg"
+          src="/images/ProfileImage.jpg"
           layout="fill"
-          alt="Logo"
+          alt="Profile Image"
           objectFit="cover"
         />
       </S.ImageContainer>
       <S.InfoContainer>
-        <S.Title>Angel Leonardo Mendieta Castillo</S.Title>
-        <S.SubTitle>Programador Frontend</S.SubTitle>
+        <S.Name>Angel Leonardo Mendieta Castillo</S.Name>
+        <S.Role>Programador Frontend</S.Role>
         <S.Description>
           I have been coding for about 1+ year in React JS and Next JS. I am a
           Front-End Developer with a especial focus on the creation of

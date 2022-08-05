@@ -5,21 +5,83 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const Container = styled.div`
   display: grid;
-  grid-auto-flow: column;
-  grid-template-rows: 'max-content' 'max-content';
+  grid-template-areas:
+    'SectionTitle'
+    'ProfileImage'
+    'InfoContainer';
   justify-content: center;
   grid-gap: 1.2rem;
   width: 100%;
-  background-color: var(--purple);
   border-radius: 2rem;
+
+  @media (min-width: 800px) {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas:
+      'SectionTitle SectionTitle'
+      'ProfileImage InfoContainer';
+  }
 `
+
+export const SectionTitle = styled.div`
+  grid-area: SectionTitle;
+  display: flex;
+  align-items: baseline;
+  grid-gap: 0.8rem;
+  width: 100%;
+`
+
+export const TitleNumber = styled.span`
+  font-size: var(--x5);
+  color: var(--secondary-color);
+`
+
+export const TitleText = styled.h2`
+  font-size: var(--x7);
+  color: var(--secondary-color-light);
+  white-space: nowrap;
+`
+
+export const TitleLine = styled.hr`
+  width: 100%;
+  border-color: var(--secondary-color);
+  align-self: center;
+`
+
 export const ImageContainer = styled.div`
+  grid-area: ProfileImage;
   position: relative;
-  width: 320px;
-  height: 100%;
+  width: 100%;
+  height: 480px;
+  border-radius: 2rem;
+  overflow: hidden;
+
+  @media (min-width: 800px) {
+    height: 320px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+    background-size: 400% 400%;
+    background-repeat: no-repeat;
+    background-image: var(--pri-sec-op6-diag-right-gradient);
+    transition: all 0.8s ease;
+  }
+
+  &:hover:after {
+    background-position: 100% 100%;
+    transition: all 0.8s ease;
+  }
 `
 
 export const InfoContainer = styled.div`
+  grid-area: InfoContainer;
   display: grid;
   grid-template-areas:
     'Title'
@@ -29,16 +91,16 @@ export const InfoContainer = styled.div`
   grid-template-rows: repeat(4, max-content);
   grid-gap: 1.2rem;
   width: 100%;
-  padding: 20px 40px;
+  padding: 0 40px 20px;
 `
 
-export const Title = styled.h2`
+export const Name = styled.h2`
   grid-area: Title;
   color: var(--primary-color);
   font-size: var(--x6);
   text-align: center;
 `
-export const SubTitle = styled.h3`
+export const Role = styled.h3`
   grid-area: Subtitle;
   color: var(--secondary-color);
   font-size: var(--x5);

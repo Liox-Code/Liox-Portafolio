@@ -48,14 +48,19 @@ const GlobalStyle = createGlobalStyle`
 
       --primary-op8: rgba(216, 65, 135, 0.8);
       --primary-op6: rgba(216, 65, 135, 0.6);
+      --primary-op3: rgba(216, 65, 135, 0.3);
       --primary-op1: rgba(216, 65, 135, 0.1);
       --secondary-op8: rgba(7, 244, 158, 0.8);
       --secondary-op6: rgba(7, 244, 158, 0.6);
+      --secondary-op3: rgba(7, 244, 158, 0.3);
       --purple-op6: rgba(25, 22, 44, 0.65);
       --black-op6: rgba(47, 47, 47, 0.6);
       --white-op6: rgba(255, 255, 255, 0.6);
+      --white-op0: rgba(255, 255, 255, 0.1);
 
       --pri-sec-diag-right-gradient: linear-gradient(170deg, var(--primary-color) 30%, var(--secondary-color) 70%);
+      --pri-sec-op6-diag-right-gradient: linear-gradient(135deg,var(--white-op0) 25%, var(--primary-op6) 80%, var(--secondary-op6) 90%);
+      --sec-diag-op6-right-gradient: linear-gradient(135deg, var(--secondary-op6), var(--white-op0));
 
 
       /* --magenta: #d83f87;
