@@ -3,6 +3,9 @@ import styled from 'styled-components'
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+// Components
+import SectionTitle from '../../components-ui/SectionTitle'
+
 export const Container = styled.div`
   display: grid;
   grid-template-areas:
@@ -23,29 +26,8 @@ export const Container = styled.div`
   }
 `
 
-export const SectionTitle = styled.div`
+export const SCSectionTitle = styled(SectionTitle)`
   grid-area: SectionTitle;
-  display: flex;
-  align-items: baseline;
-  grid-gap: 0.8rem;
-  width: 100%;
-`
-
-export const TitleNumber = styled.span`
-  font-size: var(--x5);
-  color: var(--secondary-color);
-`
-
-export const TitleText = styled.h2`
-  font-size: var(--x7);
-  color: var(--white);
-  white-space: nowrap;
-`
-
-export const TitleLine = styled.hr`
-  width: 100%;
-  border-color: var(--secondary-color);
-  align-self: center;
 `
 
 export const ImageContainer = styled.div`
@@ -111,8 +93,8 @@ export const Description = styled.div`
   grid-area: Description;
   width: 100%;
   color: var(--white);
-  font-size: var(--x4);
-  line-height: var(--x6);
+  font-size: var(--x5);
+  line-height: var(--x8);
   text-align: justify;
 `
 

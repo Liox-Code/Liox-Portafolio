@@ -10,12 +10,12 @@ import {
   faGithub,
   faWhatsapp
 } from '@fortawesome/free-brands-svg-icons'
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faLink, faXmark } from '@fortawesome/free-solid-svg-icons'
 // Components
 import Layout from '../components/Layout'
 
 config.autoAddCss = false
-library.add(faLinkedin, faGithub, faWhatsapp, faBars, faXmark)
+library.add(faLinkedin, faGithub, faWhatsapp, faBars, faLink, faXmark)
 
 const GlobalStyle = createGlobalStyle`
     *{
@@ -48,6 +48,7 @@ const GlobalStyle = createGlobalStyle`
 
       --white: #F1FAEE;
       --black: #161616;
+      --black-light:#222222;
       --error-color: #c2272d;
       --succes-color: #3ab549;
 
@@ -63,11 +64,16 @@ const GlobalStyle = createGlobalStyle`
       --secondary-op6: rgba(0, 245, 212, 0.6);
       --secondary-op3: rgba(0, 245, 212, 0.3);
       --secondary-op1: rgba(0, 245, 212, 0.1);
+      --complementary-06-op8:rgba(58,12,163, 0.8);
+      --complementary-06-op6:rgba(58,12,163, 0.6);
+      --complementary-06-op3:rgba(58,12,163, 0.3);
+      --complementary-06-op1:rgba(58,12,163, 0.1);
       --complementary-07-op8:rgba(72, 12, 168, 0.8);
       --complementary-07-op6:rgba(72, 12, 168, 0.6);
       --complementary-07-op3:rgba(72, 12, 168, 0.3);
       --complementary-07-op1:rgba(72, 12, 168, 0.1);
       --black-op6: rgba(22, 22, 22, 0.6);
+      --black-op3: rgba(22, 22, 22, 0.3);
       --white-op6: rgba(241, 250, 328, 0.6);
       --white-op1: rgba(241, 250, 328, 0.1);
 

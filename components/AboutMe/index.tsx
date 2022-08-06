@@ -7,11 +7,7 @@ import * as S from './styles'
 const AboutMe = () => {
   return (
     <S.Container>
-      <S.SectionTitle>
-        <S.TitleNumber>01.</S.TitleNumber>
-        <S.TitleText>About Me</S.TitleText>
-        <S.TitleLine />
-      </S.SectionTitle>
+      <S.SCSectionTitle symbol="01" title="About Me" />
       <S.ImageContainer>
         <Image
           src="/images/ProfileImage.jpg"

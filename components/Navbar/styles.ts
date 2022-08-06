@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -61,7 +62,7 @@ export const Link = styled.a`
   padding: 1.2rem 2rem;
   color: var(--primary-color);
   cursor: pointer;
-  font-size: var(--x4);
+  font-size: var(--x5);
   font-weight: bold;
   text-decoration: none;
 

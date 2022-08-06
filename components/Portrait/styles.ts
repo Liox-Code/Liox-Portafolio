@@ -32,7 +32,7 @@ export const Title = styled.h1`
 
 export const Description = styled.h2`
   color: var(--white);
-  font-size: var(--x4);
+  font-size: var(--x5);
   font-weight: 500;
   text-align: center;
 `

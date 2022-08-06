@@ -1,28 +1,36 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
-  background-color: var(--complementary-10-color);
   border-radius: 8px;
 `
 
 export const ImageContainer = styled.div`
+  grid-area: 1 / 1 / 3 / 3;
   position: relative;
   width: 100%;
-  height: 160px;
+  min-height: 400px;
+  z-index: 0;
 `
 
 export const ContentContainer = styled.div`
+  grid-area: 1 / 1 / 3 / 3;
   display: grid;
-  grid-gap: 1.2rem;
-  padding: 1.2rem;
+  grid-template-rows: max-content auto max-content max-content;
+  grid-gap: 2.8rem;
+  padding: 60px 40px;
+  background: var(--complementary-06-op6);
+  z-index: 1;
 `
 
 export const Title = styled.h2`
   font-size: var(--x5);
 
   & a {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: none;
   }
 
@@ -33,8 +41,18 @@ export const Title = styled.h2`
   }
 `
 
-export const Description = styled.div`
+export const Paragraph = styled.p`
   color: var(--white);
-  font-size: var(--x4);
+  font-size: var(--x5);
   text-align: justify;
+  line-height: var(--x8);
+`
+
+export const ProjectsLinksContainer = styled.div`
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  grid-gap: 1.2rem;
+  width: 100%;
+  height: 40px;
 `

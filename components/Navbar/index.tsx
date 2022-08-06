@@ -13,7 +13,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)
   const Links = [
     { id: 'lk-1', text: 'INICIO', path: '/' },
-    { id: 'lk-2', text: 'PROYECTOS', path: '/projects' }
+    { id: 'lk-2', text: 'PROYECTOS', path: '/' }
     // { id: 'lk-2', text: 'HABILIDADES', path: '/skills' },
     // { id: 'lk-2', text: 'ACERCA DE MI', path: '/aboutMe' }
   ]

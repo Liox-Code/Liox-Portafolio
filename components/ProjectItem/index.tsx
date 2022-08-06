@@ -2,15 +2,20 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
+// Components
+import Button from '../../components-ui/Button'
+
 // Styles
 import * as S from './styles'
 
 interface IProjectData {
   id: string
   imagePath: string
-  imageLink: string
+  githubLink: string
+  websiteLink: string
   title: string
   description: string
+  techstack: string[]
 }
 
 type TProjectItemProps = {
@@ -22,32 +27,49 @@ const ProjectItem: React.FC<TProjectItemProps> = (props: TProjectItemProps) => {
 
   const {
     imagePath = '#',
-    imageLink = '#',
+    githubLink = '#',
+    websiteLink = '#',
     title = '#',
-    description = '#'
+    description = '#',
+    techstack = []
   } = ProjectData
 
   return (
     <S.Container>
-      <Link href={imageLink}>
-        <a>
-          <S.ImageContainer>
+      <S.ImageContainer>
+        <Link href={websiteLink}>
+          <a>
             <Image
               src={imagePath}
               layout="fill"
               alt="Project Image"
               objectFit="cover"
             />
-          </S.ImageContainer>
-        </a>
-      </Link>
+          </a>
+        </Link>
+      </S.ImageContainer>
       <S.ContentContainer>
         <S.Title>
-          <Link href={imageLink}>
+          <Link href={websiteLink}>
             <a>{title}</a>
           </Link>
         </S.Title>
-        <S.Description>{description}</S.Description>
+        <S.Paragraph>{description}</S.Paragraph>
+        <S.Paragraph>{techstack.join(' | ')}</S.Paragraph>
+        <S.ProjectsLinksContainer>
+          <Button
+            type="link"
+            linkPath={githubLink}
+            text="Github"
+            icon={['fab', 'github']}
+          />
+          <Button
+            type="link"
+            linkPath={websiteLink}
+            text="Website"
+            icon={['fas', 'link']}
+          />
+        </S.ProjectsLinksContainer>
       </S.ContentContainer>
     </S.Container>
   )
