@@ -38,7 +38,7 @@ export const TitleNumber = styled.span`
 
 export const TitleText = styled.h2`
   font-size: var(--x7);
-  color: var(--secondary-color-light);
+  color: var(--white);
   white-space: nowrap;
 `
 
@@ -110,7 +110,7 @@ export const Role = styled.h3`
 export const Description = styled.div`
   grid-area: Description;
   width: 100%;
-  color: var(--secondary-color-light);
+  color: var(--white);
   font-size: var(--x4);
   line-height: var(--x6);
   text-align: justify;

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  background-color: var(--purple-light);
+  background-color: var(--complementary-10-color);
   border-radius: 8px;
 `
 
@@ -34,7 +34,7 @@ export const Title = styled.h2`
 `
 
 export const Description = styled.div`
-  color: var(--secondary-color-light);
+  color: var(--white);
   font-size: var(--x4);
   text-align: justify;
 `

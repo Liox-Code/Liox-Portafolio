@@ -5,7 +5,6 @@ export const Container = styled.div`
   grid-gap: 2rem;
   width: 100%;
   padding: 2rem;
-  background-color: var(--purple);
   border-radius: 2rem;
 `
 export const Title = styled.h2`

@@ -30,49 +30,52 @@ const GlobalStyle = createGlobalStyle`
     }
 
     :root{
-      --primary-color: #d83f87;
-      --primary-color-light: #F3C5DB;
-      --secondary-color: #07f49e;
-      --secondary-color-light: #E1FDF3;
-      --purple: #19162c;
-      --purple-dark: #121026;
-      --purple-light: #262142;
-      --blue: #3a437e;
-      --black: #1b1b1b;
-      --black-light: #2F2F2F;
-      --white: #ffffff;
-      
+      --primary-color: #F72585;
+      --secondary-color: #00F5D4;
+
+      /* --complementary-01-color: #00F5D4; */
+      --complementary-02-color: #4CC9F0;
+      --complementary-03-color: #4895EF;
+      --complementary-04-color: #4361EE;
+      --complementary-05-color: #3F37C9;
+      --complementary-06-color: #3A0CA3;
+      --complementary-07-color: #480CA8;
+      --complementary-08-color: #560BAD;
+      --complementary-09-color: #7209B7;
+      --complementary-10-color: #6930C3;
+      --complementary-11-color: #B5179E;
+      /* --complementary-12-color: #F72585; */
+
+      --white: #F1FAEE;
+      --black: #161616;
+      --error-color: #c2272d;
+      --succes-color: #3ab549;
+
       --linkedin-color: #0077b5;
       --github-color: #333;
       --whatsapp-color: #25d366;
 
-      --primary-op8: rgba(216, 65, 135, 0.8);
-      --primary-op6: rgba(216, 65, 135, 0.6);
-      --primary-op3: rgba(216, 65, 135, 0.3);
-      --primary-op1: rgba(216, 65, 135, 0.1);
-      --secondary-op8: rgba(7, 244, 158, 0.8);
-      --secondary-op6: rgba(7, 244, 158, 0.6);
-      --secondary-op3: rgba(7, 244, 158, 0.3);
-      --purple-op6: rgba(25, 22, 44, 0.65);
-      --black-op6: rgba(47, 47, 47, 0.6);
-      --white-op6: rgba(255, 255, 255, 0.6);
-      --white-op0: rgba(255, 255, 255, 0.1);
+      --primary-op8: rgba(247, 37, 133, 0.8);
+      --primary-op6: rgba(247, 37, 133, 0.6);
+      --primary-op3: rgba(247, 37, 133, 0.3);
+      --primary-op1: rgba(247, 37, 133, 0.1);
+      --secondary-op8: rgba(0, 245, 212, 0.8);
+      --secondary-op6: rgba(0, 245, 212, 0.6);
+      --secondary-op3: rgba(0, 245, 212, 0.3);
+      --secondary-op1: rgba(0, 245, 212, 0.1);
+      --complementary-07-op8:rgba(72, 12, 168, 0.8);
+      --complementary-07-op6:rgba(72, 12, 168, 0.6);
+      --complementary-07-op3:rgba(72, 12, 168, 0.3);
+      --complementary-07-op1:rgba(72, 12, 168, 0.1);
+      --black-op6: rgba(22, 22, 22, 0.6);
+      --white-op6: rgba(241, 250, 328, 0.6);
+      --white-op1: rgba(241, 250, 328, 0.1);
 
-      --pri-sec-diag-right-gradient: linear-gradient(170deg, var(--primary-color) 30%, var(--secondary-color) 70%);
-      --pri-sec-op6-diag-right-gradient: linear-gradient(135deg,var(--white-op0) 25%, var(--primary-op6) 80%, var(--secondary-op6) 90%);
-      --sec-diag-op6-right-gradient: linear-gradient(135deg, var(--secondary-op6), var(--white-op0));
-
-
-      /* --magenta: #d83f87;
-      --magenta-dark: #9c2783;
-      --magenta-light: #ba3385;
-      --green: #16b896;
-      --green-dark: #257c8e;
-      --green-light: #07f49e;
-      --purple: #601080;
-      --purple-dark: #42047e;
-      --purple-light: #7e1c82;
-      --blue: #334086; */
+      --pri-sec-op6-diag-right-gradient: linear-gradient(135deg,
+        var(--white-op1) 25%, 
+        var(--primary-op6) 50%, 
+        var(--complementary-07-op6) 75%,
+        var(--secondary-op6) 100%);
 
       --x1: 0.4rem;
       --x2: 0.8rem;
@@ -84,6 +87,7 @@ const GlobalStyle = createGlobalStyle`
       --x8: 3.2rem;
       --x9: 3.6rem;
       --x10: 4rem;
+
     }
 `
 
