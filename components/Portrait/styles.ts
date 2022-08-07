@@ -22,7 +22,7 @@ export const Content = styled.div`
   grid-gap: 1.6rem;
   height: 100%;
   width: 100%;
-  background-color: var(--primary-op1);
+  background-color: var(--primary-op3);
 `
 
 export const Title = styled.h1`
