@@ -52,7 +52,7 @@ export const ImageContainer = styled.div`
 
     background-size: 400% 400%;
     background-repeat: no-repeat;
-    background-image: var(--pri-sec-op6-diag-right-gradient);
+    background-image: var(--opa-arco-op6-diag-left-gradient);
     transition: all 0.8s ease;
   }
 

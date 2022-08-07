@@ -72,16 +72,21 @@ const GlobalStyle = createGlobalStyle`
       --complementary-07-op6:rgba(72, 12, 168, 0.6);
       --complementary-07-op3:rgba(72, 12, 168, 0.3);
       --complementary-07-op1:rgba(72, 12, 168, 0.1);
+      --black-op8: rgba(22, 22, 22, 0.8);
       --black-op6: rgba(22, 22, 22, 0.6);
       --black-op3: rgba(22, 22, 22, 0.3);
       --white-op6: rgba(241, 250, 328, 0.6);
       --white-op1: rgba(241, 250, 328, 0.1);
 
-      --pri-sec-op6-diag-right-gradient: linear-gradient(135deg,
+      --opa-arco-op6-diag-left-gradient: linear-gradient(135deg,
         var(--white-op1) 25%, 
         var(--primary-op6) 50%, 
         var(--complementary-07-op6) 75%,
         var(--secondary-op6) 100%);
+      --opa-pry-com07-diag-left-gradient:linear-gradient(90deg,
+        var(--primary-op6), 
+        var(--complementary-07-op6),
+        var(--primary-op6));
 
       --x1: 0.4rem;
       --x2: 0.8rem;

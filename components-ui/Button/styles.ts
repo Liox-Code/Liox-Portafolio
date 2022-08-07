@@ -12,15 +12,21 @@ const buttonStyle = css`
   padding: 8px 20px;
   background-color: var(--black);
   border: 1px solid transparent;
-  border-radius: 16px;
   color: var(--white);
   cursor: pointer;
   font-size: var(--x5);
   text-decoration: none;
   outline: none;
 
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-image: var(--opa-pry-com07-diag-left-gradient);
+  transition: all 0.8s ease;
+
   &:hover {
     color: var(--secondary-color);
+    background-position: 100% 100%;
+    transition: all 0.8s ease;
   }
 
   &:focus {
@@ -41,6 +47,5 @@ export const Button = styled.button`
 `
 
 export const Icon = styled(FontAwesomeIcon)`
-  color: var(--primary-color);
   font-size: var(--x6);
 `

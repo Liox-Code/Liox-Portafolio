@@ -6,6 +6,13 @@ export const Container = styled.div`
   grid-template-columns: 1fr 1fr;
   width: 100%;
   border-radius: 8px;
+  transition: all 1s ease;
+
+  &:hover {
+    box-shadow: -5px -5px 30px 5px var(--primary-op6),
+      5px 5px 30px 5px var(--complementary-07-op6);
+    transition: all 1s ease;
+  }
 `
 
 export const ImageContainer = styled.div`
@@ -22,7 +29,7 @@ export const ContentContainer = styled.div`
   grid-template-rows: max-content auto max-content max-content;
   grid-gap: 2.8rem;
   padding: 60px 40px;
-  background: var(--complementary-06-op6);
+  background: var(--black-op8);
   z-index: 1;
 `
 
