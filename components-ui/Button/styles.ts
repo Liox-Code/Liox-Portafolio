@@ -8,10 +8,11 @@ const buttonStyle = css`
   grid-auto-flow: column;
   align-items: center;
   grid-gap: 0.8rem;
+  width: max-content;
   height: 100%;
   padding: 8px 20px;
   background-color: var(--black);
-  border: 1px solid transparent;
+  border: none;
   color: var(--white);
   cursor: pointer;
   font-size: var(--x5);

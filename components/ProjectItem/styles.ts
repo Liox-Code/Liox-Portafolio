@@ -28,6 +28,7 @@ export const ContentContainer = styled.div`
   display: grid;
   grid-template-rows: max-content auto max-content max-content;
   grid-gap: 2.8rem;
+  align-items: flex-start;
   padding: 60px 40px;
   background: var(--black-op8);
   z-index: 1;
@@ -56,10 +57,13 @@ export const Paragraph = styled.p`
 `
 
 export const ProjectsLinksContainer = styled.div`
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: max-content;
-  grid-gap: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
   width: 100%;
-  height: 40px;
+
+  @media (min-width: 800px) {
+    justify-content: flex-start;
+  }
 `
