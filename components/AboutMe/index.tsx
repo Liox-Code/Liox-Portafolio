@@ -14,6 +14,7 @@ const AboutMe = () => {
           layout="fill"
           alt="Profile Image"
           objectFit="cover"
+          priority
         />
       </S.ImageContainer>
       <S.InfoContainer>

@@ -17,10 +17,16 @@ export const Container = styled.div`
 
 export const ImageContainer = styled.div`
   grid-area: 1 / 1 / 3 / 3;
-  position: relative;
   width: 100%;
   min-height: 400px;
   z-index: 0;
+`
+
+export const ImageWrapper = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: red;
 `
 
 export const ContentContainer = styled.div`

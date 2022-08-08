@@ -39,12 +39,14 @@ const ProjectItem: React.FC<TProjectItemProps> = (props: TProjectItemProps) => {
       <S.ImageContainer>
         <Link href={websiteLink}>
           <a>
-            <Image
-              src={imagePath}
-              layout="fill"
-              alt="Project Image"
-              objectFit="cover"
-            />
+            <S.ImageWrapper>
+              <Image
+                src={imagePath}
+                layout="fill"
+                alt="Project Image"
+                objectFit="cover"
+              />
+            </S.ImageWrapper>
           </a>
         </Link>
       </S.ImageContainer>
