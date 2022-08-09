@@ -97,7 +97,7 @@ const Projects = () => {
   ]
   return (
     <S.Container>
-      <S.SCSectionTitle symbol="02" title="Projects" />
+      <S.SCSectionTitle symbol="03" title="Projects" />
       <S.ProjectsContainer>
         {ProjectsData.map(ProjectData => {
           const { id } = ProjectData

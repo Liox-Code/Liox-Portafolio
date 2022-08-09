@@ -2,6 +2,7 @@ import React from 'react'
 
 // Components
 import AboutMe from '../components/AboutMe'
+import SkillsTools from '../components/SkillsTools'
 import Projects from '../components/Projects'
 
 // Styles
@@ -13,6 +14,9 @@ const index = () => {
       <S.ProjectContainer>
         <Projects />
       </S.ProjectContainer>
+      <S.SkillsContainer>
+        <SkillsTools />
+      </S.SkillsContainer>
       <S.AboutMeContainer>
         <AboutMe />
       </S.AboutMeContainer>
