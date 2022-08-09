@@ -19,7 +19,7 @@ const AboutMe = () => {
       </S.ImageContainer>
       <S.InfoContainer>
         <S.Name>Angel Leonardo Mendieta Castillo</S.Name>
-        <S.Role>Programador Frontend</S.Role>
+        <S.Role>Frontend Developer</S.Role>
         <S.Description>
           I have been coding for about 1+ year in React JS and Next JS. I am a
           Front-End Developer with a especial focus on the creation of

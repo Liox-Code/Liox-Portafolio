@@ -17,12 +17,9 @@ const Portrait = () => {
     <Portal show={show}>
       <S.Container>
         <S.Content>
-          <S.Title>HI! I AM LIOX</S.Title>
-          <S.Description>
-            I&apos;m a frontend developer specializing in building user friendly
-            and scalable products focus on the user experience.{' '}
-          </S.Description>
-          <S.ButtonClose onClick={handleToggleShow}>View my work</S.ButtonClose>
+          <S.Loader onClick={handleToggleShow} disabled>
+            Loading...
+          </S.Loader>
         </S.Content>
       </S.Container>
     </Portal>

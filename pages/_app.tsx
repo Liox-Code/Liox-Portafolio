@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Router from 'next/router'
 import { AppProps } from 'next/app'
 import { createGlobalStyle } from 'styled-components'
 
@@ -11,8 +12,10 @@ import {
   faWhatsapp
 } from '@fortawesome/free-brands-svg-icons'
 import { faBars, faLink, faXmark } from '@fortawesome/free-solid-svg-icons'
+
 // Components
 import Layout from '../components/Layout'
+import Loading from '../components/Loading'
 
 config.autoAddCss = false
 library.add(faLinkedin, faGithub, faWhatsapp, faBars, faLink, faXmark)
@@ -103,6 +106,23 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+  const [isLoading, setIsLoading] = useState<boolean>(false)
+  Router.events.on('routeChangeStart', () => {
+    setIsLoading(true)
+  })
+  Router.events.on('routeChangeComplete', () => {
+    setIsLoading(false)
+  })
+
+  if (isLoading) {
+    return (
+      <>
+        <GlobalStyle />
+        <Loading />
+      </>
+    )
+  }
+
   return (
     <Layout>
       <GlobalStyle />

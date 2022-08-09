@@ -25,30 +25,10 @@ export const Content = styled.div`
   background-color: var(--primary-op3);
 `
 
-export const Title = styled.h1`
-  color: var(--white);
-  font-size: var(--x8);
-`
-
-export const Description = styled.h2`
-  color: var(--white);
-  font-size: var(--x5);
-  font-weight: 500;
-  text-align: center;
-`
-
-export const ButtonClose = styled.button`
-  height: 40px;
-  width: 200px;
-  background-color: var(--primary-op6);
+export const Loader = styled.button`
+  color: var(--secondary-color);
+  font-size: var(--x10);
+  background: transparent;
   border: none;
-  border-radius: 1.6rem;
-  cursor: pointer;
-  color: var(--white);
-  font-size: var(--x6);
   outline: none;
-
-  &:hover {
-    background-color: var(--primary-op8);
-  }
 `
