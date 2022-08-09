@@ -9,7 +9,6 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 60px;
-  background-color: transparent;
 `
 
 export const LogoContainer = styled.div`
@@ -46,6 +45,7 @@ export const Nav = styled.nav`
   grid-auto-flow: row;
   width: 100%;
   min-width: 320px;
+  background: var(--black-op6);
 
   @media (min-width: 800px) {
     position: static;

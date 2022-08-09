@@ -6,6 +6,7 @@ export const SectionTitle = styled.div`
   align-items: baseline;
   grid-gap: 0.8rem;
   width: 100%;
+  margin-bottom: 40px;
 `
 
 export const TitleNumber = styled.span`

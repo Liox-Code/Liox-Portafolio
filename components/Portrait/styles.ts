@@ -15,7 +15,7 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   display: grid;
-  grid-template-columns: 400px;
+  grid-template-columns: minmax(auto, 400px);
   align-content: center;
   justify-content: center;
   justify-items: center;

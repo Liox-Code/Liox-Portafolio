@@ -8,13 +8,23 @@ export const Body = styled.div`
 `
 
 export const HeaderContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 0 3rem;
   z-index: 100;
+  background: var(--black-op6);
 `
 
 export const Container = styled.div`
   display: grid;
   justify-content: center;
+  margin-top: 60px;
+
+  @media (min-width: 800px) {
+    margin-top: 0;
+  }
 `
 
 export const FooterContainer = styled.div`
