@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 // Hooks
-import useWindowSize from '../../hooks/useWindowSize'
+import useWindowSize from '@hooks/useWindowSize'
 
 // Styles
 import * as S from './styles'
@@ -13,8 +13,8 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)
   const Links = [
     { id: 'lk-1', text: 'ABOUT ME', path: '/aboutMe' },
+    { id: 'lk-3', text: 'SKILLS', path: '/skills' },
     { id: 'lk-2', text: 'PROJECTS', path: '/' }
-    // { id: 'lk-3', text: 'SKILLS', path: '/skills' },
   ]
 
   return (

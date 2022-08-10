@@ -1,9 +1,9 @@
 import React from 'react'
 
 // Components
-import AboutMe from '../components/AboutMe'
-import SkillsTools from '../components/SkillsTools'
-import Projects from '../components/Projects'
+import AboutMe from '@components/AboutMe'
+import SkillsTools from '@components/SkillsTools'
+import Projects from '@components/Projects'
 
 // Styles
 import * as S from '../styles/index'

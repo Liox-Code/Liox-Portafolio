@@ -14,8 +14,8 @@ import {
 import { faBars, faLink, faXmark } from '@fortawesome/free-solid-svg-icons'
 
 // Components
-import Layout from '../components/Layout'
-import Loading from '../components/Loading'
+import Layout from '@components/Layout'
+import Loading from '@components/Loading'
 
 config.autoAddCss = false
 library.add(faLinkedin, faGithub, faWhatsapp, faBars, faLink, faXmark)

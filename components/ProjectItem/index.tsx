@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 // Components
-import Button from '../../components-ui/Button'
+import Button from '@components-ui/Button'
 
 // Styles
 import * as S from './styles'

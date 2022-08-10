@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // Components
-import SectionTitle from '../../components-ui/SectionTitle'
+import SectionTitle from '@components-ui/SectionTitle'
 
 export const Container = styled.div`
   display: grid;
@@ -13,7 +13,7 @@ export const Container = styled.div`
     'ProfileImage'
     'InfoContainer';
   justify-content: center;
-  grid-gap: 1.2rem;
+  grid-gap: 2rem;
   width: 100%;
   border-radius: 2rem;
 
