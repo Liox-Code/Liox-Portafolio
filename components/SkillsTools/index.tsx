@@ -3,11 +3,11 @@ import React from 'react'
 // Components
 import Skill from '@components/Skill'
 
-// Styles
-import * as S from './styles'
-
 // Constants
 import { SKILLS } from '@constants/constants'
+
+// Styles
+import * as S from './styles'
 
 const SkillsTools = () => {
   const SkillsData = [

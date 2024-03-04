@@ -1,13 +1,13 @@
 import React from 'react'
 
 // Components
-import ProjectItem from '../ProjectItem'
-
-// Styles
-import * as S from './styles'
+import ProjectItem from '@components/ProjectItem'
 
 // Constants
 import { PROJECTS } from '@constants/constants'
+
+// Styles
+import * as S from './styles'
 
 const Projects = () => {
   const ProjectsData = [

@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 
-// Styles
-import * as S from './styles'
-
 // Constants
 import { ABOUT_ME } from '@constants/constants'
+
+// Styles
+import * as S from './styles'
 
 const AboutMe = () => {
   return (
