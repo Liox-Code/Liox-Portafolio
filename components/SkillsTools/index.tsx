@@ -6,6 +6,9 @@ import Skill from '@components/Skill'
 // Styles
 import * as S from './styles'
 
+// Constants
+import { SKILLS } from '@constants/constants'
+
 const SkillsTools = () => {
   const SkillsData = [
     {
@@ -54,7 +57,7 @@ const SkillsTools = () => {
     { skillId: 'sd-14', imagePath: '/images/icons/unity.svg', title: 'Unity' }
   ]
   return (
-    <S.Container>
+    <S.Container id={SKILLS}>
       <S.SCSectionTitle symbol="02" title="Skills" />
       <S.SkillsList>
         {SkillsData.map(skillsData => {

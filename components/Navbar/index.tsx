@@ -5,6 +5,9 @@ import Link from 'next/link'
 // Hooks
 import useWindowSize from '@hooks/useWindowSize'
 
+// Constants
+import { ABOUT_ME, SKILLS, PROJECTS } from '@constants/constants'
+
 // Styles
 import * as S from './styles'
 
@@ -12,9 +15,9 @@ const Navbar = () => {
   const size = useWindowSize()
   const [showMenu, setShowMenu] = useState(false)
   const Links = [
-    { id: 'lk-1', text: 'ABOUT ME', path: '/aboutMe' },
-    { id: 'lk-3', text: 'SKILLS', path: '/skills' },
-    { id: 'lk-2', text: 'PROJECTS', path: '/' }
+    { id: 'lk-1', text: 'ABOUT ME', path: `#${ABOUT_ME}` },
+    { id: 'lk-3', text: 'SKILLS', path: `#${SKILLS}` },
+    { id: 'lk-2', text: 'PROJECTS', path: `#${PROJECTS}` }
   ]
 
   return (
@@ -49,7 +52,11 @@ const Navbar = () => {
           {Links.map(link => {
             const { id, text, path } = link
             return (
-              <Link href={path} key={id} passHref>
+              <Link
+                href={path}
+                key={id}
+                passHref
+              >
                 <S.Link>{text}</S.Link>
               </Link>
             )

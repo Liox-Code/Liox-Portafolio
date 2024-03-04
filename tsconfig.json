@@ -17,7 +17,8 @@
     "paths": {
       "@components/*": ["components/*"],
       "@components-ui/*": ["components-ui/*"],
-      "@hooks/*": ["hooks/*"]
+      "@hooks/*": ["hooks/*"],
+      "@constants/*": ["constants/*"]
     },
     "jsx": "preserve"
   },

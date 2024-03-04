@@ -6,6 +6,9 @@ import ProjectItem from '../ProjectItem'
 // Styles
 import * as S from './styles'
 
+// Constants
+import { PROJECTS } from '@constants/constants'
+
 const Projects = () => {
   const ProjectsData = [
     {
@@ -96,7 +99,7 @@ const Projects = () => {
     }
   ]
   return (
-    <S.Container>
+    <S.Container id={PROJECTS}>
       <S.SCSectionTitle symbol="03" title="Projects" />
       <S.ProjectsContainer>
         {ProjectsData.map(ProjectData => {

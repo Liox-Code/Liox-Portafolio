@@ -4,9 +4,12 @@ import Image from 'next/image'
 // Styles
 import * as S from './styles'
 
+// Constants
+import { ABOUT_ME } from '@constants/constants'
+
 const AboutMe = () => {
   return (
-    <S.Container>
+    <S.Container id={ABOUT_ME}>
       <S.SCSectionTitle symbol="01" title="About Me" />
       <S.ImageContainer>
         <Image
