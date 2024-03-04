@@ -14,7 +14,7 @@ const Projects = () => {
     {
       id: 'pd-1',
       imagePath: '/images/Project_Dixel.png',
-      websiteLink: 'https://dixel.click/',
+      websiteLink: 'https://dixel-landing-page.vercel.app/',
       githubLink: 'https://github.com/Liox-Code/dixel-landing-page',
       title: 'Dixel - Landing Page',
       description: `Landing page to promote Dixel web development services, to enhance traffic and service's sells.`,
